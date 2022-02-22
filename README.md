@@ -1,10 +1,6 @@
-## Requirements
-- [Flutter v.2.8.0 =< v.3.0.0][web flutter]
+## Official docs for Client App Bicarakan.id
 
+see docs [Client App Docs][docs]
 
+[docs]: https://docs.page/bicarakan-id/client-app-bicarakan-id-docs
 
-
-
-
-
-[web flutter]: https://flutter.dev
