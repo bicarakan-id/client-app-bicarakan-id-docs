@@ -2,5 +2,56 @@
 ![github](/images/http-flow.png)
 > http flow
 
+
+//TODO: create models serialzer
+
+1. UI
+First in UI you can make request like that:
+```dart
+  FutureBuilder<List<Data>> {
+    future: controller.fetchDummy(),
+    builder: (futureContext, snapshot) {
+      return Text(snapshot.data.length);
+    }
+  }
+```
+
+2. Controller
+Create function fetchDummy in `Controller` class 
+```dart
+  class Controller {
+    final Client client;
+
+    const Controller({required this.client});
+
+    Future<List<Data>> fetchDummy() async {
+      return client.fetchDummy();
+    }
+  }
+```
+
+3. Client
+Create function fetchDummy in `Client` class, need required ApiClient for hit api to server
+```dart 
+  class Client extends GeneralApiClient {
+    final SessionController sessionController;
+    //defind constructor for super class
+    // TODO: defind constructor
+    const Client({
+      required this.sessionController;
+    }) : super(a, b, c);
+
+    Future<List<Data>> fetchDummy() async {
+      const endpoint = 'api/dummy/'
+
+     final  List<Data> response = await getList(
+        endpoint: endpoint,
+        token: sessionController.getToken(),
+        serializer: Data.serializer,
+      );
+    }
+  }
+```
+
 [github]: https://github.com/bicarakan-id/client-app-bicarakan-id
 [cover]: https://github.com/bicarakan-id/client-app-bicarakan-id-docs/blob/master/docs/images/http-flow.png
