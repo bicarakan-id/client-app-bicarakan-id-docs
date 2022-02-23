@@ -4,6 +4,10 @@
     [
       "Get Started",
       "/getting-started"
+    ],
+    [
+      "HTTP Request",
+      "/http-requst"
     ]
   ]
 }

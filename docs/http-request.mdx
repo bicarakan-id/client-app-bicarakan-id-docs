@@ -1,0 +1,11 @@
+## Flow
+```mermaid
+graph LR
+A[UI Request]
+A --> B{Controller}
+B --> C[Client]
+C --> D(Server)
+D --> C
+C --> B
+B --> A
+```
