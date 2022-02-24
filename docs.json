@@ -1,7 +1,9 @@
 {
   "name": "Client App Bicarakan.id",
   "theme": "#5791FF",
-  "favicon": "/favicon.png",
+  "favicon": "/images/favicon.png",
+  "logo": "/images/logo.png",
+  "logoDark": "/images/logo.png",
   "sidebar": [
     [
       "Get Started",
