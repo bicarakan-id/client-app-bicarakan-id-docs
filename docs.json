@@ -1,5 +1,7 @@
 {
   "name": "Client App Bicarakan.id",
+  "theme": "#5791FF",
+  "favicon": "/favicon.png",
   "sidebar": [
     [
       "Get Started",
@@ -8,6 +10,10 @@
     [
       "HTTP Request",
       "/http-request"
+    ],
+    [
+      "Models",
+      "/models"
     ]
   ]
 }
