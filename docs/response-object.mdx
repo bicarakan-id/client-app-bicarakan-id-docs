@@ -1,0 +1,30 @@
+## Response Object
+
+`ResponseObject` is abstract class for base response object, and you must extends your class with `ResponseObject`.
+
+Example
+```dart
+  class Data extends ResponseObject {
+    final String id;
+
+    const Data({
+      required this.id,
+    });
+  }
+```
+
+`Data`(response object) need a function to convert json to `Data` object
+```dart
+  class Data extends ResponseObject {
+    final String id;
+
+    const Data({
+      required this.id,
+    });
+
+    factory Data.fromJson(Map<String, dynamic> json) => Data(id: json['id'] as String);
+  }
+```
+
+Or you can use package [`JsonSerializable`](https://pub.dev/packages/json_serializable) for convert json to object.
+

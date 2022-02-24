@@ -14,8 +14,13 @@
       "/http-request"
     ],
     [
-      "Models",
-      "/models"
+      "Models/Object",
+      [
+        [
+          "Response Object",
+          "/response-object"
+        ]
+      ]
     ]
   ]
 }
